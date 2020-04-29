@@ -10,8 +10,7 @@ class User(db.Model):
     email = db.Column(db.String(128), nullable=True)
     password = db.Column(db.String(128), nullable=False)
     
-    def __init__(self, username, password, email, id):
-        self.id = id
+    def __init__(self, username, password, email):
         self.username = username
         self.password = password
         self.email = email
